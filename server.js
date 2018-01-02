@@ -38,6 +38,16 @@ app.route('/')
 		  res.sendFile(process.cwd() + '/views/index.html');
     })
 
+app.get('/new/:url', function(req, res) {
+    	var url = req.params.url;
+	if((url.indexOf("https://") != 0 && url.indexOf("http://") != 0) || url.indexOf(".com") != url.length - 4) {
+		var error = { "error":"Incorrect Format" };
+		res.type('txt').send(error);
+	}
+	else {
+		
+	}
+});
 // Respond not found to all the wrong routes
 app.use(function(req, res, next){
   res.status(404);
