@@ -42,7 +42,7 @@ app.route('/')
 		  res.sendFile(process.cwd() + '/views/index.html');
     })
 
-app.get('/new/:url', function(req, res) {
+app.get('/new/http://:url', function(req, res) {
     	var url = req.params.url;
 	if((url.indexOf("https://") != 0 && url.indexOf("http://") != 0) || url.indexOf(".com") != url.length - 4) {
 		var error = { "error":"Incorrect Format" };
@@ -57,7 +57,7 @@ app.get('/new/:url', function(req, res) {
 			else {
 				console.log("connected");
 			}
-		}
+		});
 	}
 });
 // Respond not found to all the wrong routes
