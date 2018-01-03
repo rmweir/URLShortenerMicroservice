@@ -8,7 +8,9 @@
 var fs = require('fs');
 var express = require('express');
 var app = express();
+var mongodb = require('mongodb');
 
+/*
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
     var allowedOrigins = ['https://narrow-plane.gomix.me', 'https://www.freecodecamp.com'];
@@ -21,6 +23,8 @@ if (!process.env.DISABLE_XORIGIN) {
     next();
   });
 }
+*/
+
 
 app.use('/public', express.static(process.cwd() + '/public'));
 
@@ -45,7 +49,15 @@ app.get('/new/:url', function(req, res) {
 		res.type('txt').send(error);
 	}
 	else {
-		
+		var MongoClient = mongodb.MongoClient;
+		var url = process.env.CONNECTION;
+		MongoClient.connect(url, function(err, db) {
+			if(err)
+				console.log("error);
+			else {
+				
+			}
+		}
 	}
 });
 // Respond not found to all the wrong routes
