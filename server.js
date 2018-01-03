@@ -53,9 +53,9 @@ app.get('/new/:url', function(req, res) {
 		var url = process.env.CONNECTION;
 		MongoClient.connect(url, function(err, db) {
 			if(err)
-				console.log("error);
+				console.log("error");
 			else {
-				
+				console.log("connected");
 			}
 		}
 	}
