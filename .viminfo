@@ -9,6 +9,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
+:w
 :q!
 
 # Search String History (newest to oldest):
@@ -24,13 +25,26 @@
 	t
 
 # File marks:
-'0  48  1  ~/server.js
-'1  1  0  ~/config.json
-'2  15  65  ~/package.json
+'0  58  28  ~/server.js
+'1  52  1  ~/server.js
+'2  1  0  ~/config.json
+'3  15  65  ~/package.json
 
 # Jumplist (newest first):
--'  48  1  ~/server.js
+-'  58  28  ~/server.js
 -'  1  1  ~/server.js
+-'  52  1  ~/server.js
+-'  1  0  ~/config.json
+-'  15  65  ~/package.json
+-'  1  0  ~/package.json
+-'  15  65  ~/package.json
+-'  1  0  ~/package.json
+-'  1  0  ~/config.json
+-'  15  65  ~/package.json
+-'  1  0  ~/package.json
+-'  15  65  ~/package.json
+-'  1  0  ~/package.json
+-'  48  1  ~/server.js
 -'  1  0  ~/config.json
 -'  15  65  ~/package.json
 -'  1  0  ~/package.json
@@ -45,22 +59,30 @@
 # History of marks within files (newest to oldest):
 
 > ~/server.js
-	"	48	1
-	^	48	2
-	.	48	1
-	+	50	2
-	+	42	4
-	+	43	0
-	+	42	29
-	+	43	107
-	+	44	22
-	+	43	108
-	+	46	1
-	+	45	1
-	+	44	44
-	+	45	29
+	"	58	28
+	^	58	29
+	.	58	28
+	+	62	2
+	+	46	4
+	+	47	0
+	+	46	29
+	+	47	107
+	+	48	22
+	+	47	108
+	+	50	1
 	+	49	1
-	+	48	1
+	+	48	44
+	+	49	29
+	+	61	1
+	+	52	1
+	+	11	32
+	+	13	1
+	+	27	0
+	+	60	2
+	+	59	3
+	+	58	3
+	+	56	23
+	+	58	28
 
 > ~/config.json
 	"	1	0
