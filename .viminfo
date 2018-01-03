@@ -25,20 +25,21 @@
 	 
 
 # File marks:
-'0  61  13  ~/server.js
-'1  52  29  ~/server.js
-'2  47  4  ~/server.js
-'3  45  24  ~/server.js
-'4  62  4  ~/server.js
-'5  76  1  ~/server.js
-'6  59  28  ~/server.js
-'7  53  1  ~/server.js
-'8  1  0  ~/config.json
-'9  15  65  ~/package.json
+'0  66  1  ~/server.js
+'1  61  13  ~/server.js
+'2  52  29  ~/server.js
+'3  47  4  ~/server.js
+'4  45  24  ~/server.js
+'5  62  4  ~/server.js
+'6  76  1  ~/server.js
+'7  59  28  ~/server.js
+'8  53  1  ~/server.js
+'9  1  0  ~/config.json
 
 # Jumplist (newest first):
--'  61  13  ~/server.js
+-'  66  1  ~/server.js
 -'  1  1  ~/server.js
+-'  61  13  ~/server.js
 -'  52  29  ~/server.js
 -'  47  4  ~/server.js
 -'  45  24  ~/server.js
@@ -137,7 +138,7 @@
 # History of marks within files (newest to oldest):
 
 > ~/server.js
-	"	61	13
+	"	66	1
 	^	61	14
 	.	61	14
 	+	64	2
