@@ -44,11 +44,12 @@ app.route('/')
 
 app.get('/new/http://:url', function(req, res) {
     	var url = req.params.url;
-	if((url.indexOf("https://") != 0 && url.indexOf("http://") != 0) || url.indexOf(".com") != url.length - 4) {
+	if(url.indexOf(".com") != url.length - 4) {
 		var error = { "error":"Incorrect Format" };
 		res.type('txt').send(error);
 	}
 	else {
+		res.type('txt').send("asd");
 		var MongoClient = mongodb.MongoClient;
 		var url = process.env.CONNECTION;
 		MongoClient.connect(url, function(err, db) {
@@ -57,6 +58,7 @@ app.get('/new/http://:url', function(req, res) {
 			else {
 				console.log("connected");
 			}
+			db.close();
 		});
 	}
 });
