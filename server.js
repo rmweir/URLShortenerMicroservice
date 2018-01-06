@@ -63,11 +63,19 @@ app.get('/new/http://:url', function(req, res) {
 				
 				var collection = db.collection('urls');
 				var urlarray = collection.find({
-					id:1
+					id:12
 				}).toArray(function(err, documents) {
 					//console.log(documents); 
-					name = documents;
-					console.log(name);
+					if (documents.size > 0)
+						console.log(name);
+					else {
+						var suburl = collection.count(function(err, count) {
+	console.log(count);
+});
+						
+						//var insertme = {
+						//collection.insert
+					}
 				});
 				//console.log(JSON.stringify(urlarray));
 				//console.log(name);
