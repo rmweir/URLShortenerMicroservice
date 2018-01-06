@@ -65,10 +65,10 @@ app.get('/new/http://:url', function(req, res) {
 				var urlarray = collection.find({
 					id:1
 				}).toArray(function(err, documents) {
-					console.log(documents); 
-					name = documents[0];
-				});
-				console.log(name);
+					//console.log(documents); 
+					name = documents[0];}
+				);
+				console.log(JSON.stringify(urlarray));
 			}
 			db.close();
 		});
