@@ -52,6 +52,8 @@ app.get('/new/http://:url', function(req, res) {
 		res.type('txt').send("asd");
 		var MongoClient = mongodb.MongoClient;
 		var dburl = process.env.CONNECTION;
+		var name = "";
+
 		console.log(url);
 		MongoClient.connect(dburl, function(err, db) {
 			if(err)
@@ -63,14 +65,10 @@ app.get('/new/http://:url', function(req, res) {
 				var urlarray = collection.find({
 					id:1
 				}).toArray(function(err, documents) {
-					// JSON.parse(documents[0]);
-					
-					// console.log(documents[0].redirect);
-					
-						
-					
+					console.log(documents); 
+					name = documents[0];
 				});
-				console.log(urlarray);
+				console.log(name);
 			}
 			db.close();
 		});
