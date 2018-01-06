@@ -66,8 +66,11 @@ app.get('/new/http://:url', function(req, res) {
 					actualurl:url
 				}).toArray(function(err, documents) {
 					console.log(documents.length); 
-					if (documents.length > 0)
+					if (documents.length > 0) {
 						console.log(documents[0].id);
+						res.status(200);
+						res.type('txt').send(documents[0].actualurl);
+					}
 					else {
 						collection.count(function(err, count) {
 							var suburl = count;
