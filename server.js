@@ -63,9 +63,9 @@ app.get('/new/http://:url', function(req, res) {
 				
 				var collection = db.collection('urls');
 				var urlarray = collection.find({
-					id:12
+					actualurl:url
 				}).toArray(function(err, documents) {
-					//console.log(documents); 
+					console.log(documents.size); 
 					if (documents.size > 0)
 						console.log(name);
 					else {
