@@ -49,7 +49,7 @@ app.get('/new/http://:url', function(req, res) {
 		res.type('txt').send(error);
 	}
 	else {
-		res.type('txt').send("asd");
+		// res.type('txt').send("asd");
 		var MongoClient = mongodb.MongoClient;
 		var dburl = process.env.CONNECTION;
 		var name = "";
