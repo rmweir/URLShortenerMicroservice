@@ -62,8 +62,8 @@ app.get('/new/http://:url', function(req, res) {
 				var urlarray = collection.find({
 					id:1
 				}).toArray(function(err, documents) {
-					var obby = JSON.parse(documents);
-					console.log(JSON.stringify(obby));
+					// JSON.parse(documents[0]);
+					console.log(documents[0].name);
 				});
 				//console.log(urlarray);
 			}
