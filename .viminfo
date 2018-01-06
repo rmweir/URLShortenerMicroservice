@@ -22,30 +22,30 @@
 
 # Registers:
 ""-	CHAR	0
-	/
+	;
 
 # File marks:
-'0  71  4  ~/server.js
-'1  84  0  ~/server.js
-'2  70  6  ~/server.js
-'3  73  21  ~/server.js
-'4  72  5  ~/server.js
-'5  68  6  ~/server.js
-'6  74  3  ~/server.js
-'7  69  23  ~/server.js
+'0  69  20  ~/server.js
+'1  70  22  ~/server.js
+'2  73  5  ~/server.js
+'3  71  4  ~/server.js
+'4  84  0  ~/server.js
+'5  72  5  ~/server.js
+'6  68  6  ~/server.js
+'7  74  3  ~/server.js
 '8  67  16  ~/server.js
 '9  1  1  ~/server.js
 
 # Jumplist (newest first):
--'  71  4  ~/server.js
+-'  69  20  ~/server.js
 -'  1  1  ~/server.js
+-'  70  22  ~/server.js
+-'  73  5  ~/server.js
+-'  71  4  ~/server.js
 -'  84  0  ~/server.js
--'  70  6  ~/server.js
--'  73  21  ~/server.js
 -'  72  5  ~/server.js
 -'  68  6  ~/server.js
 -'  74  3  ~/server.js
--'  69  23  ~/server.js
 -'  67  16  ~/server.js
 -'  57  18  ~/server.js
 -'  80  1  ~/server.js
@@ -138,14 +138,9 @@
 # History of marks within files (newest to oldest):
 
 > ~/server.js
-	"	71	4
-	^	71	5
-	.	71	4
-	+	78	2
-	+	46	4
-	+	47	0
-	+	46	29
-	+	47	107
+	"	69	20
+	^	69	21
+	.	69	21
 	+	48	22
 	+	47	108
 	+	50	1
@@ -240,6 +235,12 @@
 	+	69	5
 	+	70	6
 	+	71	4
+	+	75	2
+	+	69	12
+	+	70	5
+	+	73	5
+	+	70	23
+	+	69	21
 
 > ~/config.json
 	"	1	0
