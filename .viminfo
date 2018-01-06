@@ -27,20 +27,21 @@
 	l
 
 # File marks:
-'0  73  19  ~/server.js
-'1  75  35  ~/server.js
-'2  72  36  ~/server.js
-'3  69  20  ~/server.js
-'4  70  22  ~/server.js
-'5  81  5  ~/server.js
-'6  79  4  ~/server.js
-'7  92  0  ~/server.js
-'8  80  5  ~/server.js
-'9  68  6  ~/server.js
+'0  105  0  ~/server.js
+'1  73  19  ~/server.js
+'2  75  35  ~/server.js
+'3  72  36  ~/server.js
+'4  69  20  ~/server.js
+'5  70  22  ~/server.js
+'6  81  5  ~/server.js
+'7  79  4  ~/server.js
+'8  92  0  ~/server.js
+'9  80  5  ~/server.js
 
 # Jumplist (newest first):
--'  73  19  ~/server.js
+-'  105  0  ~/server.js
 -'  1  1  ~/server.js
+-'  73  19  ~/server.js
 -'  75  35  ~/server.js
 -'  72  36  ~/server.js
 -'  57  2  ~/server.js
@@ -140,7 +141,7 @@
 # History of marks within files (newest to oldest):
 
 > ~/server.js
-	"	73	19
+	"	105	0
 	^	73	20
 	.	73	19
 	+	47	4
