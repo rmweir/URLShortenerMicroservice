@@ -69,10 +69,15 @@ app.get('/new/http://:url', function(req, res) {
 					if (documents.size > 0)
 						console.log(name);
 					else {
-						var suburl = collection.count(function(err, count) {
-	console.log(count);
-});
-						
+						collection.count(function(err, count) {
+							var suburl = count;
+							var insertobby = { id:count + 1, actualurl:url};
+							collection.insert(insertobby, function(err, data) { 
+								if(err) {console.log("cannot insert object");}
+								else {console.log("success");}
+								console.log(count);
+							});
+						});
 						//var insertme = {
 						//collection.insert
 					}
