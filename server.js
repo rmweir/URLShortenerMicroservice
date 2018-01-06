@@ -52,11 +52,17 @@ app.get('/new/http://:url', function(req, res) {
 		res.type('txt').send("asd");
 		var MongoClient = mongodb.MongoClient;
 		var url = process.env.CONNECTION;
+		console.log(url);
 		MongoClient.connect(url, function(err, db) {
 			if(err)
 				console.log("error");
 			else {
 				console.log("connected");
+				var collection = db.collection('urls');
+				var urlarray = collection.find({
+					domain:{$gt: 2}
+				});
+				console.log(urlarray);
 			}
 			db.close();
 		});
