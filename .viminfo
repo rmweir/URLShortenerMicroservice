@@ -24,24 +24,25 @@
 "1	LINE	0
 							console.log();
 ""-	CHAR	0
-	/
+	e
 
 # File marks:
-'0  68  30  ~/server.js
-'1  70  10  ~/server.js
-'2  97  0  ~/server.js
-'3  80  8  ~/server.js
-'4  78  25  ~/server.js
-'5  110  0  ~/server.js
-'6  73  19  ~/server.js
-'7  72  36  ~/server.js
-'8  69  20  ~/server.js
+'0  70  32  ~/server.js
+'1  69  24  ~/server.js
+'2  68  32  ~/server.js
+'3  97  0  ~/server.js
+'4  80  8  ~/server.js
+'5  78  25  ~/server.js
+'6  110  0  ~/server.js
+'7  73  19  ~/server.js
+'8  72  36  ~/server.js
 '9  86  5  ~/server.js
 
 # Jumplist (newest first):
--'  68  30  ~/server.js
+-'  70  32  ~/server.js
 -'  1  1  ~/server.js
--'  70  10  ~/server.js
+-'  69  24  ~/server.js
+-'  68  32  ~/server.js
 -'  97  0  ~/server.js
 -'  80  8  ~/server.js
 -'  78  25  ~/server.js
@@ -49,7 +50,6 @@
 -'  73  19  ~/server.js
 -'  72  36  ~/server.js
 -'  57  2  ~/server.js
--'  69  20  ~/server.js
 -'  86  5  ~/server.js
 -'  84  4  ~/server.js
 -'  85  5  ~/server.js
@@ -139,11 +139,9 @@
 # History of marks within files (newest to oldest):
 
 > ~/server.js
-	"	68	30
-	^	68	31
-	.	68	30
-	+	67	19
-	+	67	31
+	"	70	32
+	^	70	33
+	.	70	32
 	+	67	42
 	+	66	8
 	+	67	20
@@ -241,7 +239,9 @@
 	+	79	7
 	+	80	8
 	+	66	17
-	+	68	30
+	+	68	32
+	+	69	24
+	+	70	32
 
 > ~/config.json
 	"	1	0
