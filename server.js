@@ -66,9 +66,11 @@ app.get('/new/http://:url', function(req, res) {
 					id:1
 				}).toArray(function(err, documents) {
 					//console.log(documents); 
-					name = documents[0];}
-				);
-				console.log(JSON.stringify(urlarray));
+					name = documents[0];
+					//console.log(name);}
+				});
+				//console.log(JSON.stringify(urlarray));
+				console.log(name);
 			}
 			db.close();
 		});
