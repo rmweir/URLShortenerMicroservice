@@ -43,7 +43,7 @@ app.route('/')
     })
 
 app.get('/new/http://:url', function(req, res) {
-    	var url = req.params.url;
+    	var url = 'http://' +  req.params.url;
 	if(url.indexOf(".com") != url.length - 4) {
 		var error = { "error":"Incorrect Format" };
 		res.type('txt').send(error);
@@ -51,21 +51,26 @@ app.get('/new/http://:url', function(req, res) {
 	else {
 		res.type('txt').send("asd");
 		var MongoClient = mongodb.MongoClient;
-		var url = process.env.CONNECTION;
+		var dburl = process.env.CONNECTION;
 		console.log(url);
-		MongoClient.connect(url, function(err, db) {
+		MongoClient.connect(dburl, function(err, db) {
 			if(err)
 				console.log("error");
 			else {
 				console.log("connected");
+				
 				var collection = db.collection('urls');
 				var urlarray = collection.find({
 					id:1
 				}).toArray(function(err, documents) {
 					// JSON.parse(documents[0]);
-					console.log(documents[0].name);
+					
+					// console.log(documents[0].redirect);
+					
+						
+					
 				});
-				//console.log(urlarray);
+				console.log(urlarray);
 			}
 			db.close();
 		});
