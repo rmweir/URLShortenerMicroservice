@@ -60,9 +60,12 @@ app.get('/new/http://:url', function(req, res) {
 				console.log("connected");
 				var collection = db.collection('urls');
 				var urlarray = collection.find({
-					domain:{$gt: 2}
+					id:1
+				}).toArray(function(err, documents) {
+					var obby = JSON.parse(documents);
+					console.log(JSON.stringify(obby));
 				});
-				console.log(urlarray);
+				//console.log(urlarray);
 			}
 			db.close();
 		});
