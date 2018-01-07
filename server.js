@@ -68,8 +68,12 @@ app.get('/new/http://:url', function(req, res) {
 					console.log(documents.length); 
 					if (documents.length > 0) {
 						console.log(documents[0].id);
+						var output = { 
+							original_url:documents[0].actualurl,
+							short_url:"http://energetic-bird.com/go/" + documents[0].id
+						}
 						res.status(200);
-						res.type('txt').send(documents[0].actualurl);
+						res.type('txt').send(output);
 					}
 					else {
 						collection.count(function(err, count) {
