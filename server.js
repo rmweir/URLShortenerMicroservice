@@ -54,11 +54,11 @@ app.get('/go/:urlid', function(req, res) {
 
 			var collection = db.collection('urls');
 			var urlarray = collection.find({
-				id:urlid	
+				id:parseInt(req.params.urlid)	
 			}).toArray(function(err, documents) {
 				if(documents.length > 0) {
 					console.log(documents[0].actualurl);
-					res.redirect(documents.[0].actualurl);
+					res.redirect(documents[0].actualurl);
 				}
 				else {
 					var output = { error:"That is not a valid url" };
@@ -67,7 +67,8 @@ app.get('/go/:urlid', function(req, res) {
 				
 			});
 		}
-	{
+	});
+	
 });
 app.get('/new/http://:url', function(req, res) {
     	var url = 'http://' +  req.params.url;
