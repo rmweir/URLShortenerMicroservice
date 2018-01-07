@@ -24,57 +24,57 @@
 "1	LINE	0
 							console.log();
 ""-	CHAR	0
-	{
+		
 
 # File marks:
-'0  57  32  ~/server.js
-'1  70  3  ~/server.js
-'2  71  0  ~/server.js
-'3  61  27  ~/server.js
-'4  65  45  ~/server.js
-'5  118  49  ~/server.js
-'6  116  62  ~/server.js
-'7  46  0  ~/server.js
-'8  102  0  ~/server.js
-'9  104  32  ~/server.js
+'0  67  0  ~/server.js
+'1  57  32  ~/server.js
+'2  70  3  ~/server.js
+'3  71  0  ~/server.js
+'4  61  27  ~/server.js
+'5  65  45  ~/server.js
+'6  117  49  ~/server.js
+'7  115  62  ~/server.js
+'8  46  0  ~/server.js
+'9  101  0  ~/server.js
 
 # Jumplist (newest first):
--'  57  32  ~/server.js
+-'  67  0  ~/server.js
 -'  1  1  ~/server.js
+-'  57  32  ~/server.js
 -'  70  3  ~/server.js
 -'  71  0  ~/server.js
 -'  61  27  ~/server.js
 -'  65  45  ~/server.js
--'  118  49  ~/server.js
--'  116  62  ~/server.js
+-'  117  49  ~/server.js
+-'  115  62  ~/server.js
 -'  46  0  ~/server.js
--'  102  0  ~/server.js
--'  104  32  ~/server.js
--'  126  0  ~/server.js
--'  80  4  ~/server.js
--'  103  21  ~/server.js
--'  98  32  ~/server.js
--'  97  24  ~/server.js
--'  96  32  ~/server.js
--'  139  0  ~/server.js
--'  122  8  ~/server.js
--'  120  25  ~/server.js
--'  152  0  ~/server.js
--'  108  19  ~/server.js
--'  107  36  ~/server.js
--'  85  2  ~/server.js
--'  128  5  ~/server.js
--'  127  5  ~/server.js
--'  129  3  ~/server.js
--'  95  16  ~/server.js
--'  135  1  ~/server.js
--'  130  13  ~/server.js
+-'  101  0  ~/server.js
+-'  103  32  ~/server.js
+-'  124  0  ~/server.js
+-'  79  11  ~/server.js
+-'  102  21  ~/server.js
+-'  97  32  ~/server.js
+-'  96  24  ~/server.js
+-'  95  32  ~/server.js
+-'  136  0  ~/server.js
+-'  121  8  ~/server.js
+-'  119  25  ~/server.js
+-'  149  0  ~/server.js
+-'  107  19  ~/server.js
+-'  106  36  ~/server.js
+-'  84  2  ~/server.js
+-'  125  9  ~/server.js
+-'  126  3  ~/server.js
+-'  94  16  ~/server.js
+-'  132  1  ~/server.js
+-'  127  13  ~/server.js
 -'  75  4  ~/server.js
 -'  73  24  ~/server.js
--'  131  4  ~/server.js
--'  145  1  ~/server.js
--'  90  28  ~/server.js
--'  81  1  ~/server.js
+-'  128  4  ~/server.js
+-'  142  1  ~/server.js
+-'  89  28  ~/server.js
+-'  80  1  ~/server.js
 -'  1  0  ~/config.json
 -'  15  65  ~/package.json
 -'  1  0  ~/package.json
@@ -140,79 +140,74 @@
 # History of marks within files (newest to oldest):
 
 > ~/server.js
-	"	57	32
-	^	57	33
-	.	57	32
-	+	96	6
-	+	98	22
-	+	127	44
-	+	128	21
+	"	67	0
+	^	67	1
+	.	80	0
+	+	97	6
+	+	124	4
+	+	127	2
+	+	96	12
 	+	97	5
-	+	98	6
-	+	126	4
-	+	130	2
-	+	97	12
-	+	98	5
-	+	128	5
-	+	98	23
-	+	97	27
-	+	98	24
-	+	105	8
-	+	97	7
-	+	124	5
-	+	125	4
-	+	124	22
-	+	122	21
-	+	107	35
-	+	94	9
-	+	122	7
-	+	124	7
-	+	123	5
-	+	122	25
-	+	107	36
-	+	122	6
-	+	107	58
-	+	108	26
-	+	108	6
-	+	122	0
-	+	107	6
-	+	120	6
-	+	109	55
-	+	110	59
-	+	111	54
-	+	112	37
-	+	120	27
-	+	121	7
-	+	122	8
-	+	94	17
-	+	96	32
+	+	125	9
+	+	97	23
+	+	96	27
 	+	97	24
-	+	98	35
-	+	104	62
-	+	97	31
-	+	106	4
-	+	105	5
-	+	104	21
+	+	104	8
+	+	96	7
+	+	122	29
+	+	123	4
+	+	122	46
+	+	121	21
+	+	106	35
+	+	93	9
+	+	121	7
+	+	122	31
+	+	122	5
+	+	121	25
+	+	106	36
+	+	121	6
+	+	106	58
+	+	107	26
+	+	107	6
+	+	121	0
+	+	106	6
+	+	119	6
+	+	108	55
+	+	109	59
+	+	110	54
+	+	111	37
+	+	119	27
+	+	120	7
+	+	121	8
+	+	93	17
+	+	95	32
+	+	96	24
+	+	97	35
+	+	103	62
+	+	96	31
+	+	105	4
+	+	104	5
 	+	103	21
-	+	80	4
-	+	99	21
-	+	100	42
-	+	101	6
-	+	100	15
-	+	101	66
-	+	102	7
-	+	104	32
-	+	102	0
-	+	110	0
-	+	114	8
-	+	119	7
-	+	114	8
+	+	102	21
+	+	79	11
+	+	98	21
+	+	99	42
+	+	100	6
+	+	99	15
+	+	100	66
+	+	101	7
+	+	103	32
+	+	101	0
+	+	109	0
 	+	113	8
-	+	117	9
+	+	118	7
+	+	113	8
+	+	112	8
+	+	116	9
 	+	72	2
 	+	46	0
-	+	116	62
-	+	118	49
+	+	115	62
+	+	117	49
 	+	71	1
 	+	50	9
 	+	53	2
@@ -243,6 +238,11 @@
 	+	69	3
 	+	70	3
 	+	57	32
+	+	125	3
+	+	125	4
+	+	125	3
+	+	122	6
+	+	80	0
 
 > ~/config.json
 	"	1	0
