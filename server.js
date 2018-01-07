@@ -42,8 +42,32 @@ app.route('/')
 		  res.sendFile(process.cwd() + '/views/index.html');
     })
 
-app.get('/go/:id', function(req, res) {
-	
+app.get('/go/:urlid', function(req, res) {
+	var MongoClient = mongodb.MongoClient;
+	var dburl = process.env.CONNECTION;
+
+	MongoClient.connect(dburl, function(err, db) {
+		if(err)
+			console.log("error connecting to db on go redirect");
+		else {
+			console.log("connected");
+
+			var collection = db.collection('urls');
+			var urlarray = collection.find({
+				id:urlid	
+			}).toArray(function(err, documents) {
+				if(documents.length > 0) {
+					console.log(documents[0].actualurl);
+					res.redirect(documents.[0].actualurl);
+				}
+				else {
+					var output = { error:"That is not a valid url" };
+					res.status(200).type('txt').send(output);
+				}
+				
+			});
+		}
+	{
 });
 app.get('/new/http://:url', function(req, res) {
     	var url = 'http://' +  req.params.url;
