@@ -42,6 +42,9 @@ app.route('/')
 		  res.sendFile(process.cwd() + '/views/index.html');
     })
 
+app.get('/go/:id', function(req, res) {
+	
+});
 app.get('/new/http://:url', function(req, res) {
     	var url = 'http://' +  req.params.url;
 	if(url.indexOf(".com") != url.length - 4) {
@@ -81,7 +84,14 @@ app.get('/new/http://:url', function(req, res) {
 							var insertobby = { id:count + 1, actualurl:url};
 							collection.insert(insertobby, function(err, data) { 
 								if(err) {console.log("cannot insert object");}
-								else {console.log("success");}
+								else {
+									console.log("success");
+									var output = {
+										original_url:url,
+										short_url:"http://energetic-bird.com/go/" + count + 1
+									}
+									res.status(200).type('txt').send(output);
+								}
 								console.log(count);
 							});
 						});
