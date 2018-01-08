@@ -1,7 +1,7 @@
-var mongoclient = require('mongodb');
+var mongodb = require('mongodb');
 var fs = require('fs');
 
-module.exports = function() {		
+module.exports = function(url, res) {		
 		var MongoClient = mongodb.MongoClient;
 		var dburl = process.env.CONNECTION;
 		
