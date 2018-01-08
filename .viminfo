@@ -22,25 +22,36 @@
 
 # Registers:
 ""1	LINE	0
-	
+					console.log("connected");
+					
+					var collection = db.collection('urls');
+					var urlarray = collection.find({
+						actualurl:url
+					}).toArray(function(err, documents) {
+						console.log(documents.length); 
+						if (documents.length > 0) {
+							console.log(documents[0].id);
 "2	LINE	0
+	
+"3	LINE	0
 							console.log();
 "-	CHAR	0
 		
 
 # File marks:
-'0  1  1  ~/server.js
-'1  83  2  ~/server.js
-'2  67  0  ~/server.js
-'3  57  32  ~/server.js
-'4  70  3  ~/server.js
-'5  71  0  ~/server.js
-'6  61  27  ~/server.js
-'7  65  45  ~/server.js
-'8  116  49  ~/server.js
-'9  114  62  ~/server.js
+'0  89  0  ~/server.js
+'1  1  1  ~/server.js
+'2  83  2  ~/server.js
+'3  67  0  ~/server.js
+'4  57  32  ~/server.js
+'5  70  3  ~/server.js
+'6  71  0  ~/server.js
+'7  61  27  ~/server.js
+'8  65  45  ~/server.js
+'9  108  49  ~/server.js
 
 # Jumplist (newest first):
+-'  89  0  ~/server.js
 -'  1  1  ~/server.js
 -'  83  2  ~/server.js
 -'  67  0  ~/server.js
@@ -49,32 +60,29 @@
 -'  71  0  ~/server.js
 -'  61  27  ~/server.js
 -'  65  45  ~/server.js
--'  116  49  ~/server.js
--'  114  62  ~/server.js
+-'  108  49  ~/server.js
+-'  106  62  ~/server.js
 -'  46  0  ~/server.js
--'  100  0  ~/server.js
--'  102  32  ~/server.js
--'  123  0  ~/server.js
--'  79  11  ~/server.js
--'  101  21  ~/server.js
--'  96  32  ~/server.js
--'  95  24  ~/server.js
+-'  92  0  ~/server.js
 -'  94  32  ~/server.js
--'  135  0  ~/server.js
--'  120  8  ~/server.js
--'  118  25  ~/server.js
--'  148  0  ~/server.js
--'  106  19  ~/server.js
--'  105  36  ~/server.js
--'  124  9  ~/server.js
--'  125  3  ~/server.js
--'  93  16  ~/server.js
--'  131  1  ~/server.js
--'  126  13  ~/server.js
+-'  115  0  ~/server.js
+-'  79  11  ~/server.js
+-'  93  21  ~/server.js
+-'  90  32  ~/server.js
+-'  127  0  ~/server.js
+-'  112  8  ~/server.js
+-'  110  25  ~/server.js
+-'  140  0  ~/server.js
+-'  98  19  ~/server.js
+-'  97  36  ~/server.js
+-'  116  9  ~/server.js
+-'  117  3  ~/server.js
+-'  123  1  ~/server.js
+-'  118  13  ~/server.js
 -'  75  4  ~/server.js
 -'  73  24  ~/server.js
--'  127  4  ~/server.js
--'  141  1  ~/server.js
+-'  119  4  ~/server.js
+-'  133  1  ~/server.js
 -'  88  28  ~/server.js
 -'  80  1  ~/server.js
 -'  1  0  ~/config.json
@@ -142,73 +150,72 @@
 # History of marks within files (newest to oldest):
 
 > ~/server.js
-	"	1	1
-	^	83	0
-	.	83	0
-	+	123	4
-	+	126	2
-	+	95	12
-	+	96	5
-	+	124	9
-	+	96	23
-	+	95	27
-	+	96	24
-	+	103	8
-	+	95	7
-	+	121	29
-	+	122	4
-	+	121	46
-	+	120	21
-	+	105	35
-	+	92	9
-	+	120	7
-	+	121	31
-	+	121	5
-	+	120	25
-	+	105	36
-	+	120	6
-	+	105	58
-	+	106	26
-	+	106	6
-	+	120	0
-	+	105	6
-	+	118	6
-	+	107	55
-	+	108	59
-	+	109	54
-	+	110	37
-	+	118	27
-	+	119	7
-	+	120	8
-	+	92	17
-	+	94	32
-	+	95	24
-	+	96	35
-	+	102	62
-	+	95	31
-	+	104	4
-	+	103	5
-	+	102	21
-	+	101	21
+	"	89	0
+	^	89	0
+	.	89	0
+	+	118	2
+	+	90	12
+	+	90	5
+	+	116	9
+	+	90	23
+	+	90	27
+	+	90	24
+	+	95	8
+	+	90	7
+	+	113	29
+	+	114	4
+	+	113	46
+	+	112	21
+	+	97	35
+	+	90	9
+	+	112	7
+	+	113	31
+	+	113	5
+	+	112	25
+	+	97	36
+	+	112	6
+	+	97	58
+	+	98	26
+	+	98	6
+	+	112	0
+	+	97	6
+	+	110	6
+	+	99	55
+	+	100	59
+	+	101	54
+	+	102	37
+	+	110	27
+	+	111	7
+	+	112	8
+	+	90	17
+	+	90	32
+	+	90	24
+	+	90	35
+	+	94	62
+	+	90	31
+	+	96	4
+	+	95	5
+	+	94	21
+	+	93	21
 	+	79	11
-	+	97	21
-	+	98	42
-	+	99	6
-	+	98	15
-	+	99	66
-	+	100	7
-	+	102	32
+	+	90	21
+	+	90	42
+	+	91	6
+	+	90	15
+	+	91	66
+	+	92	7
+	+	94	32
+	+	92	0
 	+	100	0
-	+	108	0
-	+	112	8
-	+	117	7
-	+	112	8
-	+	111	8
-	+	115	9
+	+	104	8
+	+	109	7
+	+	104	8
+	+	103	8
+	+	107	9
 	+	72	2
 	+	46	0
-	+	114	62
-	+	116	49
+	+	106	62
+	+	108	49
 	+	71	1
 	+	50	9
 	+	53	2
@@ -239,12 +246,13 @@
 	+	69	3
 	+	70	3
 	+	57	32
-	+	124	3
-	+	124	4
-	+	124	3
-	+	121	6
+	+	116	3
+	+	116	4
+	+	116	3
+	+	113	6
 	+	80	0
 	+	83	0
+	+	89	0
 
 > ~/config.json
 	"	1	0
