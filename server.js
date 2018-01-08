@@ -9,7 +9,7 @@ var fs = require('fs');
 var express = require('express');
 var app = express();
 var mongodb = require('mongodb');
-var mongodbprocess = require('./mdbprocess');
+var mdbprocess = require('./mdbprocess.js');
 /*
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
@@ -43,6 +43,8 @@ app.route('/')
     })
 
 app.get('/go/:urlid', function(req, res) {
+	
+	
 	var MongoClient = mongodb.MongoClient;
 	var dburl = process.env.CONNECTION;
 
@@ -67,7 +69,7 @@ app.get('/go/:urlid', function(req, res) {
 				
 			});
 		}
-	});
+	})
 	
 });
 app.get('/new/http://:url', function(req, res) {
@@ -77,6 +79,8 @@ app.get('/new/http://:url', function(req, res) {
 		res.type('txt').send(error);
 	}
 	else {
+		mdbprocess(url, res);
+		/*
 		var MongoClient = mongodb.MongoClient;
 		var dburl = process.env.CONNECTION;
 		var name = "";
@@ -125,7 +129,7 @@ app.get('/new/http://:url', function(req, res) {
 			
 			}
 			
-		});
+		});*/
 	}
 });
 // Respond not found to all the wrong routes
