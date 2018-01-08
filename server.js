@@ -72,6 +72,16 @@ app.get('/go/:urlid', function(req, res) {
 	})
 	
 });
+app.get('/new/https://:url', function(req, res) {
+	var url = 'https://' + req.params.url;
+	if(url.indexOf(".com") != url.length - 4) {
+		var error = { "error":"Incorrect Format" };
+		res.type('txt').send(error);}
+	}
+	else
+		mdbprocess(url,res);
+}
+
 app.get('/new/http://:url', function(req, res) {
     	var url = 'http://' +  req.params.url;
 	if(url.indexOf(".com") != url.length - 4) {
