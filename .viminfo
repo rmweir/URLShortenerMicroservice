@@ -8,9 +8,9 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:q!
 :wq
 :w
-:q!
 
 # Search String History (newest to oldest):
 
@@ -42,18 +42,19 @@
 	}
 
 # File marks:
-'0  38  64  ~/mdbprocess.js
-'1  100  0  ~/server.js
-'2  83  2  ~/server.js
-'3  79  29  ~/server.js
-'4  84  0  ~/server.js
-'5  92  8  ~/server.js
-'6  12  5  ~/server.js
-'7  52  0  ~/mdbprocess.js
-'8  68  0  ~/server.js
-'9  46  20  ~/server.js
+'0  1  1  ~/views/index.html
+'1  38  64  ~/mdbprocess.js
+'2  100  0  ~/server.js
+'3  83  2  ~/server.js
+'4  79  29  ~/server.js
+'5  84  0  ~/server.js
+'6  92  8  ~/server.js
+'7  12  5  ~/server.js
+'8  52  0  ~/mdbprocess.js
+'9  68  0  ~/server.js
 
 # Jumplist (newest first):
+-'  1  1  ~/views/index.html
 -'  38  64  ~/mdbprocess.js
 -'  1  0  ~/mdbprocess.js
 -'  100  0  ~/server.js
@@ -151,9 +152,11 @@
 -'  1  0  ~/config.json
 -'  15  65  ~/package.json
 -'  1  0  ~/package.json
--'  15  65  ~/package.json
 
 # History of marks within files (newest to oldest):
+
+> ~/views/index.html
+	"	1	1
 
 > ~/mdbprocess.js
 	"	38	64
