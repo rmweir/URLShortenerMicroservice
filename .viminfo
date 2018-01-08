@@ -8,9 +8,9 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
-:q!
 :wq
 :w
+:q!
 
 # Search String History (newest to oldest):
 
@@ -24,7 +24,62 @@
 "0	LINE	0
 		var MongoClient = mongodb.MongoClient;
 		var dburl = process.env.CONNECTION;
-"1	LINE	0
+""1	LINE	0
+	/****** Main Styling ******/
+	
+	body {
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		color: #222;
+		background-color: #ECF0F1;
+		text-align: center;
+	}
+	
+	.container {
+		padding: 0;
+		margin-top: 40px;
+	}
+	
+	.footer {
+		margin-top: 60px;
+	}
+	
+	ol {
+		list-style-position: inside;
+	}
+	ul {
+		list-style-type: none;
+	}
+	
+	a {
+		color: #2574A9;
+	}
+	/****** Logo Div Styling ******/
+	
+	img {
+		margin: 20px auto 0 auto;
+		display: block;
+	}
+"2	LINE	0
+	V<!DOCTYPE html>
+	<html>
+	
+	   <head>
+	      <title>Backend Challenges | Free Code Camp</title>
+	      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+	      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+	      <link href="/public/style.css" rel="stylesheet" type="text/css">
+	   </head>
+	
+	   <body>
+	      <div class="container">
+	         <h1>Manage Node.js projects and npm packages using package.json</h1>
+	         <h3>Part 1 of Free Code Camp Backend Challenges</h3>
+	      </div>
+	   </body>
+	
+	</html>
+"3	LINE	0
 					console.log("connected");
 					
 					var collection = db.collection('urls');
@@ -34,27 +89,30 @@
 						console.log(documents.length); 
 						if (documents.length > 0) {
 							console.log(documents[0].id);
-"2	LINE	0
+"4	LINE	0
 	
-"3	LINE	0
+"5	LINE	0
 							console.log();
-""-	CHAR	0
+"-	CHAR	0
 	}
 
 # File marks:
-'0  1  1  ~/views/index.html
-'1  38  64  ~/mdbprocess.js
-'2  100  0  ~/server.js
-'3  83  2  ~/server.js
-'4  79  29  ~/server.js
-'5  84  0  ~/server.js
-'6  92  8  ~/server.js
-'7  12  5  ~/server.js
-'8  52  0  ~/mdbprocess.js
-'9  68  0  ~/server.js
+'0  49  0  ~/public/style.css
+'1  18  82  ~/views/index.html
+'2  1  1  ~/views/index.html
+'3  38  64  ~/mdbprocess.js
+'4  100  0  ~/server.js
+'5  83  2  ~/server.js
+'6  79  29  ~/server.js
+'7  84  0  ~/server.js
+'8  92  8  ~/server.js
+'9  12  5  ~/server.js
 
 # Jumplist (newest first):
--'  1  1  ~/views/index.html
+-'  49  0  ~/public/style.css
+-'  1  0  ~/public/style.css
+-'  18  82  ~/views/index.html
+-'  1  0  ~/views/index.html
 -'  38  64  ~/mdbprocess.js
 -'  1  0  ~/mdbprocess.js
 -'  100  0  ~/server.js
@@ -150,13 +208,25 @@
 -'  15  65  ~/package.json
 -'  1  0  ~/package.json
 -'  1  0  ~/config.json
--'  15  65  ~/package.json
--'  1  0  ~/package.json
 
 # History of marks within files (newest to oldest):
 
+> ~/public/style.css
+	"	49	0
+	^	49	0
+	.	48	1
+	+	1	28
+	+	48	1
+
 > ~/views/index.html
-	"	1	1
+	"	18	82
+	^	17	142
+	.	17	141
+	+	1	15
+	+	29	0
+	+	15	230
+	+	15	230
+	+	17	141
 
 > ~/mdbprocess.js
 	"	38	64
