@@ -35,7 +35,7 @@ module.exports = function(url, res) {
 									console.log("success");
 									var output = {
 										original_url:url,
-										short_url:"http://energetic-bird.com/go/" + count + 1
+										short_url:"http://energetic-bird.com/go/" + (count + 1)
 									}
 									res.status(200).type('txt').send(output);
 								}
