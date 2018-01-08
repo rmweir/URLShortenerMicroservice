@@ -8,8 +8,8 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
-:q!
 :wq
+:q!
 :w
 
 # Search String History (newest to oldest):
@@ -21,7 +21,10 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+""0	LINE	0
+		var MongoClient = mongodb.MongoClient;
+		var dburl = process.env.CONNECTION;
+"1	LINE	0
 					console.log("connected");
 					
 					var collection = db.collection('urls');
@@ -39,22 +42,26 @@
 		
 
 # File marks:
-'0  20  29  ~/mdbprocess.js
-'1  128  0  ~/server.js
-'2  136  0  ~/server.js
-'3  110  8  ~/server.js
-'4  1  29  ~/mdbprocess.js
-'5  99  29  ~/server.js
-'6  148  3  ~/server.js
-'7  116  29  ~/server.js
-'8  109  0  ~/server.js
-'9  1  1  ~/server.js
+'0  1  9  ~/mdbprocess.js
+'1  24  29  ~/mdbprocess.js
+'2  46  0  ~/server.js
+'3  2  0  ~/mdbprocess.js
+'4  85  0  ~/server.js
+'5  87  29  ~/mdbprocess.js
+'6  128  0  ~/server.js
+'7  136  0  ~/server.js
+'8  110  8  ~/server.js
+'9  99  29  ~/server.js
 
 # Jumplist (newest first):
--'  20  29  ~/mdbprocess.js
--'  1  0  ~/mdbprocess.js
--'  128  0  ~/server.js
+-'  1  9  ~/mdbprocess.js
+-'  24  29  ~/mdbprocess.js
+-'  46  0  ~/server.js
 -'  1  1  ~/server.js
+-'  2  0  ~/mdbprocess.js
+-'  85  0  ~/server.js
+-'  87  29  ~/mdbprocess.js
+-'  128  0  ~/server.js
 -'  136  0  ~/server.js
 -'  110  8  ~/server.js
 -'  99  29  ~/server.js
@@ -69,7 +76,6 @@
 -'  61  27  ~/server.js
 -'  65  45  ~/server.js
 -'  126  62  ~/server.js
--'  46  0  ~/server.js
 -'  112  0  ~/server.js
 -'  114  32  ~/server.js
 -'  135  0  ~/server.js
@@ -145,23 +151,28 @@
 -'  15  65  ~/package.json
 -'  1  0  ~/package.json
 -'  15  65  ~/package.json
--'  1  0  ~/package.json
--'  1  0  ~/config.json
--'  15  65  ~/package.json
--'  1  0  ~/package.json
 
 # History of marks within files (newest to oldest):
 
 > ~/mdbprocess.js
-	"	20	29
-	^	20	30
-	.	20	0
+	"	1	9
+	^	1	10
+	.	1	9
 	+	1	34
-	+	39	0
-	+	20	0
+	+	106	0
+	+	87	0
+	+	25	0
+	+	25	0
+	+	24	0
+	+	2	2
+	+	3	0
+	+	4	1
+	+	3	1
+	+	6	1
+	+	1	9
 
 > ~/server.js
-	"	128	0
+	"	46	0
 	^	99	30
 	.	99	0
 	+	110	12
