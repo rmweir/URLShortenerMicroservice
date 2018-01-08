@@ -1,5 +1,7 @@
 var mongoclient = require('mongodb');
-		
+var fs = require('fs');
+
+module.exports = function() {		
 		var MongoClient = mongodb.MongoClient;
 		var dburl = process.env.CONNECTION;
 		
@@ -47,3 +49,4 @@ var mongoclient = require('mongodb');
 			}
 			
 		});
+}
