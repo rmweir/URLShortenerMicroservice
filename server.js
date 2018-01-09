@@ -84,11 +84,12 @@ app.get('/new/https://:url', function(req, res) {
 
 app.get('/new/http://:url', function(req, res) {
     	var url = 'http://' +  req.params.url;
+	/*
 	if(url.indexOf(".com") != url.length - 4) {
 		var error = { "error":"Incorrect Format" };
 		res.type('txt').send(error);
-	}
-	else {
+	}*/
+	//else {
 		mdbprocess(url, res);
 		/*
 		var MongoClient = mongodb.MongoClient;
@@ -140,7 +141,7 @@ app.get('/new/http://:url', function(req, res) {
 			}
 			
 		});*/
-	}
+	//}
 });
 // Respond not found to all the wrong routes
 app.use(function(req, res, next){
