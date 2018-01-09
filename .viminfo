@@ -94,37 +94,41 @@
 "5	LINE	0
 							console.log();
 ""-	CHAR	0
-	e
+	/
 
 # File marks:
-'0  52  0  ~/mdbprocess.js
-'1  1  14  ~/views/index.html
-'2  19  98  ~/views/index.html
-'3  32  58  ~/mdbprocess.js
-'4  1  1  ~/server.js
-'5  17  150  ~/views/index.html
-'6  49  0  ~/public/style.css
-'7  18  82  ~/views/index.html
-'8  38  64  ~/mdbprocess.js
-'9  100  0  ~/server.js
+'0  1  0  ~/views/git
+'1  24  22  ~/views/index.html
+'2  1  0  ~/views/index.html
+'3  97  0  ~/server.js
+'4  65  0  ~/server.js
+'5  52  0  ~/mdbprocess.js
+'6  19  98  ~/views/index.html
+'7  32  58  ~/mdbprocess.js
+'8  1  1  ~/server.js
+'9  17  150  ~/views/index.html
 
 # Jumplist (newest first):
+-'  1  0  ~/views/git
+-'  24  22  ~/views/index.html
+-'  1  0  ~/views/index.html
+-'  97  0  ~/server.js
+-'  1  1  ~/server.js
+-'  65  0  ~/server.js
 -'  52  0  ~/mdbprocess.js
 -'  1  0  ~/mdbprocess.js
--'  1  14  ~/views/index.html
 -'  19  98  ~/views/index.html
 -'  32  58  ~/mdbprocess.js
--'  1  1  ~/server.js
 -'  17  150  ~/views/index.html
 -'  49  0  ~/public/style.css
 -'  1  0  ~/public/style.css
 -'  18  82  ~/views/index.html
 -'  38  64  ~/mdbprocess.js
--'  100  0  ~/server.js
+-'  101  0  ~/server.js
 -'  83  2  ~/server.js
 -'  79  29  ~/server.js
 -'  84  0  ~/server.js
--'  92  8  ~/server.js
+-'  93  8  ~/server.js
 -'  12  5  ~/server.js
 -'  68  0  ~/server.js
 -'  46  20  ~/server.js
@@ -132,43 +136,43 @@
 -'  26  29  ~/mdbprocess.js
 -'  48  0  ~/server.js
 -'  2  0  ~/mdbprocess.js
--'  99  0  ~/server.js
+-'  100  0  ~/server.js
 -'  90  29  ~/mdbprocess.js
--'  142  0  ~/server.js
--'  150  0  ~/server.js
--'  124  8  ~/server.js
--'  113  29  ~/server.js
--'  162  3  ~/server.js
--'  130  29  ~/server.js
--'  123  0  ~/server.js
--'  117  2  ~/server.js
+-'  143  0  ~/server.js
+-'  151  0  ~/server.js
+-'  125  8  ~/server.js
+-'  114  29  ~/server.js
+-'  163  3  ~/server.js
+-'  131  29  ~/server.js
+-'  124  0  ~/server.js
+-'  118  2  ~/server.js
 -'  69  0  ~/server.js
 -'  59  32  ~/server.js
 -'  72  3  ~/server.js
 -'  73  0  ~/server.js
 -'  63  27  ~/server.js
 -'  67  45  ~/server.js
--'  140  62  ~/server.js
--'  126  0  ~/server.js
--'  128  32  ~/server.js
--'  149  0  ~/server.js
--'  91  11  ~/server.js
--'  127  21  ~/server.js
--'  161  0  ~/server.js
--'  146  8  ~/server.js
--'  144  25  ~/server.js
--'  174  0  ~/server.js
--'  132  19  ~/server.js
--'  131  36  ~/server.js
--'  151  3  ~/server.js
--'  157  1  ~/server.js
--'  152  13  ~/server.js
+-'  141  62  ~/server.js
+-'  127  0  ~/server.js
+-'  129  32  ~/server.js
+-'  150  0  ~/server.js
+-'  92  11  ~/server.js
+-'  128  21  ~/server.js
+-'  162  0  ~/server.js
+-'  147  8  ~/server.js
+-'  145  25  ~/server.js
+-'  175  0  ~/server.js
+-'  133  19  ~/server.js
+-'  132  36  ~/server.js
+-'  152  3  ~/server.js
+-'  158  1  ~/server.js
+-'  153  13  ~/server.js
 -'  87  4  ~/server.js
 -'  85  24  ~/server.js
--'  153  4  ~/server.js
--'  167  1  ~/server.js
--'  122  28  ~/server.js
--'  114  1  ~/server.js
+-'  154  4  ~/server.js
+-'  168  1  ~/server.js
+-'  123  28  ~/server.js
+-'  115  1  ~/server.js
 -'  1  0  ~/config.json
 -'  15  65  ~/package.json
 -'  1  0  ~/package.json
@@ -179,17 +183,7 @@
 -'  1  0  ~/package.json
 -'  15  65  ~/package.json
 -'  1  0  ~/package.json
--'  88  1  ~/server.js
--'  1  0  ~/config.json
--'  15  65  ~/package.json
--'  1  0  ~/package.json
--'  15  65  ~/package.json
--'  1  0  ~/package.json
--'  1  0  ~/config.json
--'  15  65  ~/package.json
--'  1  0  ~/package.json
--'  15  65  ~/package.json
--'  1  0  ~/package.json
+-'  89  1  ~/server.js
 -'  1  0  ~/config.json
 -'  15  65  ~/package.json
 -'  1  0  ~/package.json
@@ -206,40 +200,23 @@
 -'  15  65  ~/package.json
 -'  1  0  ~/package.json
 -'  1  0  ~/config.json
+-'  15  65  ~/package.json
+-'  1  0  ~/package.json
+-'  15  65  ~/package.json
+-'  1  0  ~/package.json
+-'  1  0  ~/config.json
+-'  15  65  ~/package.json
+-'  1  0  ~/package.json
 
 # History of marks within files (newest to oldest):
 
-> ~/mdbprocess.js
-	"	52	0
-	^	32	59
-	.	38	51
-	+	1	34
-	+	109	0
-	+	90	0
-	+	27	0
-	+	27	0
-	+	26	0
-	+	2	2
-	+	5	0
-	+	6	1
-	+	5	1
-	+	8	1
-	+	1	9
-	+	4	46
-	+	52	0
-	+	2	23
-	+	4	26
-	+	1	10
-	+	4	33
-	+	1	0
-	+	38	64
-	+	23	48
-	+	38	51
+> ~/views/git
+	"	1	0
 
 > ~/views/index.html
-	"	1	14
-	^	1	15
-	.	24	60
+	"	24	22
+	^	24	23
+	.	24	23
 	+	1	15
 	+	29	0
 	+	15	230
@@ -248,51 +225,46 @@
 	+	5	25
 	+	12	17
 	+	19	98
-	+	24	60
+	+	24	23
 
 > ~/server.js
-	"	1	1
-	^	83	3
-	.	83	2
-	+	146	0
-	+	131	6
-	+	144	6
-	+	133	55
-	+	134	59
-	+	135	54
-	+	136	37
-	+	144	27
-	+	145	7
-	+	146	8
-	+	124	17
-	+	124	32
-	+	124	24
-	+	124	35
-	+	128	62
-	+	124	31
-	+	130	4
-	+	129	5
+	"	97	0
+	^	65	1
+	.	144	2
+	+	136	54
+	+	137	37
+	+	145	27
+	+	146	7
+	+	147	8
+	+	125	17
+	+	125	32
+	+	125	24
+	+	125	35
+	+	129	62
+	+	125	31
+	+	131	4
+	+	130	5
+	+	129	21
 	+	128	21
-	+	127	21
-	+	91	11
-	+	124	21
-	+	124	42
-	+	125	6
-	+	124	15
-	+	125	66
-	+	126	7
-	+	128	32
-	+	126	0
-	+	134	0
+	+	92	11
+	+	125	21
+	+	125	42
+	+	126	6
+	+	125	15
+	+	126	66
+	+	127	7
+	+	129	32
+	+	127	0
+	+	135	0
+	+	139	8
+	+	144	7
+	+	139	8
 	+	138	8
-	+	143	7
-	+	138	8
-	+	137	8
-	+	141	9
+	+	142	9
 	+	74	2
 	+	48	0
-	+	140	62
-	+	142	49
+	+	141	62
+	+	143	49
 	+	73	1
 	+	52	9
 	+	55	2
@@ -323,14 +295,14 @@
 	+	71	3
 	+	72	3
 	+	59	32
-	+	150	3
-	+	150	4
-	+	150	3
-	+	147	6
+	+	151	3
+	+	151	4
+	+	151	3
+	+	148	6
+	+	115	0
+	+	118	0
+	+	124	0
 	+	114	0
-	+	117	0
-	+	123	0
-	+	113	0
 	+	12	44
 	+	46	2
 	+	72	4
@@ -339,11 +311,11 @@
 	+	47	0
 	+	46	0
 	+	72	2
-	+	93	3
-	+	142	6
-	+	92	23
+	+	94	3
+	+	143	6
+	+	93	23
 	+	12	5
-	+	92	8
+	+	93	8
 	+	83	0
 	+	76	39
 	+	78	1
@@ -354,6 +326,38 @@
 	+	83	1
 	+	79	29
 	+	83	2
+	+	88	0
+	+	87	2
+	+	91	3
+	+	92	2
+	+	144	2
+
+> ~/mdbprocess.js
+	"	52	0
+	^	32	59
+	.	38	51
+	+	1	34
+	+	109	0
+	+	90	0
+	+	27	0
+	+	27	0
+	+	26	0
+	+	2	2
+	+	5	0
+	+	6	1
+	+	5	1
+	+	8	1
+	+	1	9
+	+	4	46
+	+	52	0
+	+	2	23
+	+	4	26
+	+	1	10
+	+	4	33
+	+	1	0
+	+	38	64
+	+	23	48
+	+	38	51
 
 > ~/public/style.css
 	"	49	0
