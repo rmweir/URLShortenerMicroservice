@@ -20,7 +20,7 @@ module.exports = function(url, res) {
 						console.log(documents[0].id);
 						var output = { 
 							original_url:documents[0].actualurl,
-							short_url:"http://energetic-bird.com/go/" + documents[0].id
+							short_url:"http://energetic-bird.glitch.me/go/" + documents[0].id
 						}
 						res.status(200);
 						res.type('txt').send(output);
@@ -35,7 +35,7 @@ module.exports = function(url, res) {
 									console.log("success");
 									var output = {
 										original_url:url,
-										short_url:"http://energetic-bird.com/go/" + (count + 1)
+										short_url:"http://energetic-bird.glitch.me/go/" + (count + 1)
 									}
 									res.status(200).type('txt').send(output);
 								}
